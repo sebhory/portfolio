@@ -69,13 +69,44 @@
         z-index: 1;
       }
 
-      h3 {
+      a {
         position: absolute;
-        font-size: 20px;
+        display: block;
+        height: 100%;
+        width: 100%;
+        z-index: 22;
+        background-color: transparent;
+        text-decoration: none;
+        text-align: center;
+
+        h3 {
+          color: white;
+          padding-top: 20%;
+          opacity: 0;
+        }
+
+        h4 {
+          margin-top: 3px;
+          color: white;
+          font-size: 20px;
+          opacity: 0;
+        }
       }
+
+      // h3 {
+      // position: absolute;
+      // font-size: 20px;
+      // text-align: center;
+
+      // }
 
       &:hover {
         background-color: $mainColor;
+        h3,
+        h4 {
+          opacity: 1;
+        }
+
         img {
           opacity: 0.2;
           z-index: 0;

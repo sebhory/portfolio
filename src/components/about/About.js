@@ -5,7 +5,11 @@ export default function About() {
     <div className="about" id="about">
       <div className="container">
         <div className="left">
-          <img src="" alt="" />
+          <img
+            src="http://droitthemes.com/wp/mak/wp-content/uploads/2018/10/about_shap_bg.png"
+            alt=""
+          />
+          <h1>Qui Suis-je</h1>
         </div>
         <div className="right">
           <p>
@@ -19,8 +23,8 @@ export default function About() {
             cillum dolore eu fugiat nu pariatur excepteur sint occaecat.
           </p>
           <div className="btn">
-            <a href="#">View Works</a>
-            <a href="#">Télécharger le CV</a>
+            <a href="#works">View Works</a>
+            <a href="#id">Télécharger le CV</a>
           </div>
         </div>
       </div>

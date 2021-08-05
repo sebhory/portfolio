@@ -57,6 +57,9 @@ export default function Portfolio() {
       title: "Prochainement",
     },
   ];
+
+  const bientot = <h4>Bientôt</h4>;
+
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
@@ -76,7 +79,13 @@ export default function Portfolio() {
           return (
             <div className="item" key={item.id}>
               <img src={item.img} alt={item.title} />
-              <h3>{item.title}</h3>
+              <a
+                href={item.link}
+                target={item.link !== "#portfolio" && "_blank"}
+              >
+                <h3>{item.title} </h3>
+                {item.link === "#portfolio" && bientot}
+              </a>
             </div>
           );
         })}
